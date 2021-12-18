@@ -1,3 +1,5 @@
+# masih belum jadi mager mau pelajari lagi tunggu mood lah
+
 from tkinter import *
 
 root = Tk()
