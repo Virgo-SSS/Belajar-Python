@@ -4,11 +4,11 @@
 # print(list("joni gudel")) #akan menghasil kan sebuah list yang dipisah2 sesuai urutan index
 
 # #contoh pengunaan list lagi
-# pertanyaan = int(input("Sebutkan bulan keberapa (1 - 12) ?"))
-# bulan = ['januari','feburary','maret', 'april', 'mei', 'juni', 'juli', 'agustus', 'september','oktober', 'november', ' desember']
+pertanyaan = int(input("Sebutkan bulan keberapa (1 - 12) ?"))
+bulan = ['januari','feburary','maret', 'april', 'mei', 'juni', 'juli', 'agustus', 'september','oktober', 'november', ' desember']
 
-# if 1 <= pertanyaan <= 13:
-#     print("Bulan", bulan [pertanyaan - 1]) #di kurangin 1 karena index di mulai dari 0, jadi biar tepat hitung nya di kurangin 1
+if 1 <= pertanyaan <= 13:
+    print("Bulan", bulan [pertanyaan - 1]) #di kurangin 1 karena index di mulai dari 0, jadi biar tepat hitung nya di kurangin 1
 
 # Bekerja dengan list menggunakan beberapa fungsi
 # append digunakan untuk menambahkan data baru di bagian akhir list
