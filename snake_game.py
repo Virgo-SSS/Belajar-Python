@@ -1,6 +1,9 @@
 """
 Snake Eater
 Made with PyGame
+
+file di ambil dari github, ini hanya sebagai refrensi kedepan
+
 """
 
 import pygame, sys, time, random

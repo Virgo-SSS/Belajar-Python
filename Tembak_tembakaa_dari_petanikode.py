@@ -1,3 +1,6 @@
+#game tembak tembak an dari petani code
+#Mencoba memahami kodingan dari py game
+# stuck di line 53 - 60 karena tidak paham maksudnya bagaimana
 import pygame
 from pygame.locals import *
 import math

@@ -1,3 +1,5 @@
+#Mempeljari membuat movement key keyboard
+
 import pygame
 from pygame import display
 pygame.init()
