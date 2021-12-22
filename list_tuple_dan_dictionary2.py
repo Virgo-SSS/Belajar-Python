@@ -33,7 +33,7 @@ while menu_item != 5 :
     menu_item = int(input("pilih menu :")) #membuat input untuk variable menu__item
     if menu_item == 1: #membuat program untuk no 1
         current = 0
-        if len(namelist) > 0: #jika jumlah data di name list di atas 0, lakukang while
+        if len(namelist) > 0: #jika jumlah data di name list di atas 0, lakukang  while current
             while current < len(namelist):
                 print(current, ".", namelist[current])
                 current = current + 1
