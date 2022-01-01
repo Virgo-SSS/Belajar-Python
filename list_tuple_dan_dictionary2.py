@@ -39,9 +39,11 @@ while menu_item != 5 :
                 current = current + 1
         else:
             print("list kosong")
+
     elif menu_item == 2: #membuat program untuk no 2
         name = input ("masukan nama :")
         namelist.append(name)
+        
     elif menu_item == 3: #membuat program untuk no 3
         del_name = input("nama yang ingin di hapus :")
         if del_name in namelist:
