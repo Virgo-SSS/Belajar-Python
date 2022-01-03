@@ -69,15 +69,21 @@ perintah = koneksi.cursor()
 # for i in perintah: #perulangan untuk menampilkan banyak nya tables
 #     print(i)
 
-perintah.execute("desc aset_kantor")
-for i in perintah:
-    print(i[0],i[1], i[2], i[3], i[4], i[5]) 
-    #[0],[1], itu merupakan index dari isi field 
-    # [0] -> nama kolom
-    # [1] -> tipe data
+# perintah.execute("desc aset_kantor")
+# for i in perintah:
+#     print(i[0],i[1], i[2], i[3], i[4], i[5]) 
+    #[0],[1], dst itu merupakan index dari table kita
+    # [0] -> field
+    # [1] -> type (tipe data)
     # [2] -> null atau not null
     # [3] -> tipe key,
     # [4] -> default 
     # [5] -> extra 
+
+perintah.execute("""
+    insert into aset_kantor(nama, tgl_beli, merek, nilai) values
+    ('Virgo', '2021-01-01', 'toyoya', 15),
+    ('stevanus', '2021-02-01', 'toyoya', 15)bbbbbbbbb
+""")
 
     
