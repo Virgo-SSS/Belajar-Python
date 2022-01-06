@@ -44,3 +44,4 @@ print(nama[0:7:3]) # 0 itu awal index, 7 akhir index, dan 3 adalah jarak nya
 6. pop () menghapus isi terakhir di dalam list
 7. remove() menghapus isi list yang di tentukan berdasarkan posisi nya
 """
+
