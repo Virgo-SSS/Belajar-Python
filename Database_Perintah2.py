@@ -1,4 +1,5 @@
-#INI ADALAH KUMPULAN KUMPULAN PERINTAH MYSQL DI PYTHON, JGN DI RUN HANYA SEBAGAI TEXT
+#INI ADALAH KUMPULAN KUMPULAN QUERY MYSQL DI PYTHON, JGN DI RUN HANYA SEBAGAI TEXT
+# UNTUK "PERINTAH", JGN LUPA DI GANTI SESUAI NAMA VARIABLE CURSOR MASING2
 
 '''Bikin Database'''
 # perintah.execute("Create database latihanPY")
@@ -57,8 +58,34 @@
 [5] -> extra '''
 
 '''insert table'''
-# perintah.execute("""
-#     insert into aset_kantor(nama, tgl_beli, merek, nilai) values
-#     ('Virgo', '2021-01-01', 'toyoya', 15),
-#     ('stevanus', '2021-02-01', 'toyoya', 15)
-# """)
+# data = "insert into customers(nama, adrres) values( %s, %s)"
+# isi_data =  [
+#     ('virgo','jalan durian'),
+#     ('stevanus','jalan belimbing'),
+#     ('kristina','jalan duku'),
+#     ('miranda','jalan buah'),
+#     ('sinaga','jalan jalan')
+# ]
+# for i in isi_data:
+#     perintah.execute(data, i)
+#     koneksi.commit() #nama "koneksi" tergantung dari nama variable untuk koneksi ke local host
+# print("Berhasil memasukan data")
+
+'''Menampilkan data'''
+# perintah.execute("Select * from  customers")
+# for i in perintah:
+#     print(i)
+
+'''Mengupdate data'''
+# update_data = "update customers set nama =%s, adrres=%s where customers_id =%s "
+# isi_data = ('vir','jalan bar',18)
+# perintah.execute(update_data, isi_data)
+# koneksi.commit() #nama "koneksi" tergantung dari nama variable untuk koneksi ke local host
+# print("Data berhasil di update")
+
+'''Delet data'''
+# delete_data = "delete from customers where customers_id = %s"
+# data = (18, )
+# perintah.execute(delete_data, data)
+# koneksi.commit()
+# print("Data berhasil di hapus")
