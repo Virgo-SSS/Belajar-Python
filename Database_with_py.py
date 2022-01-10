@@ -33,5 +33,8 @@ perintah = koneksi.cursor()
 # jgn lupa selalu gunakan execute untuk menjalan queery sql nya
 #tambahkan print agar kita tau kalau querry sql berhasil di  jalan kan (optional), gk pakai juga gpp
 
-
-    
+delete_data = "delete from customers where customers_id = %s"
+data = (18, )
+perintah.execute(delete_data, data)
+koneksi.commit()
+print("Data berhasil di hapus")
